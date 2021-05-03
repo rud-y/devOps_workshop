@@ -15,7 +15,6 @@ const ChartContainer = ({ genres }) => {
       .then((songsList) => setSongs(songsList.feed.entry))
       .catch((err) => console.error(err));
   };
-
   const handleSelectChange = (event) => {
     loadSongs(event.target.value);
   };
