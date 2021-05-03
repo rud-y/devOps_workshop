@@ -7,7 +7,7 @@ const ChartContainer = ({ genres }) => {
 
   useEffect(() => {
     loadSongs(genres[0].url);
-  }, []);
+  });
 
   const loadSongs = (url) => {
     fetch(url)
